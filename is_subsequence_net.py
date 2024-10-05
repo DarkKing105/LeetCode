@@ -8,4 +8,5 @@ while i<len(s) and j<len(s):
         i+=1
     j+=1
 
-    return True if i==len(s)
+    if i==len(s):
+        print('true')
