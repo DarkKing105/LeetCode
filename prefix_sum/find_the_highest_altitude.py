@@ -1,15 +1,9 @@
-gain = [-5,1,5,0,-7]
-ans = []
-k = 0
-ans.append(0)
-ans.append(gain[0])
+gain = [-4,-3,-2,-1,4,3,2]
+x = 0
+ans = 0
+
 for i in range(len(gain)):
-     j = i+1
-     if j == len(gain):
-          break
-          
-     k = k +  gain[j]
-     ans.append(k)
+    x = x + gain[i]
+    ans = max(ans,x)
 
 print(ans)
-
